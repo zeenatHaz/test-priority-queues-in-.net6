@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 
-
-
 namespace PriorityQueue
 {
     public class Program
@@ -17,16 +15,13 @@ namespace PriorityQueue
             pQueue.Enqueue("p3", priorityLevel.c);
             pQueue.Enqueue("p4", priorityLevel.f);
             pQueue.Enqueue("p5", priorityLevel.a);
+            pQueue.Enqueue("p6", priorityLevel.b);
 
             //try to deqeue.
             while (pQueue.TryDequeue(out string ele,out priorityLevel p))
             {
                 Console.WriteLine("process removed is: " + ele + " priority is :"+ p);
             }
-
-
-
-
         }
     }
     public class customComparer : IComparer<priorityLevel>
