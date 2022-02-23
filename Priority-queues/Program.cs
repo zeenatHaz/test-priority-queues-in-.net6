@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-
+using priorityQueues;
 namespace PriorityQueue
 {
     public class Program
@@ -22,6 +22,10 @@ namespace PriorityQueue
             {
                 Console.WriteLine("process removed is: " + ele + " priority is :"+ p);
             }
+
+            //check sortedDict functions
+            Sort.SortedDictionary();
+            
         }
     }
     public class customComparer : IComparer<priorityLevel>
